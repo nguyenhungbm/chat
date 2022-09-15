@@ -22,7 +22,7 @@
         created() {
         this.fetchMessages();
 
-        Echo.private('chat')
+        Echo.private('Messages')
             .listen('MessageSent', (e) => {
                 alert(1);
                 this.messages.push({
